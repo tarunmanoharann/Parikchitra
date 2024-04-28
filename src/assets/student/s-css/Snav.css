@@ -1,0 +1,133 @@
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    background-color: #23a5bf;
+    color: #040404;
+    padding: 0 1.5rem;
+  }
+  
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sidebar-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-right: 1rem;
+  }
+  
+  .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .website-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 5rem;
+    left: 0;
+    height: calc(100vh - 5rem);
+    background-color: #23a5bf;
+    color: #040404;
+    width: 0;
+    overflow: hidden;
+    transition: width 0.7s ease-in;
+    z-index: 999;
+  }
+  
+  .sidebar-open {
+    width: 16.67%;
+    padding: 1rem;
+  }
+  
+  .sidebar-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-content ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar-content li {
+    margin-bottom: 1.75rem;
+  }
+  
+  .logout {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+  
+  .logout .icon {
+    margin-right: 0.5rem;
+  }
+  
+  .nav-right {
+    position: relative;
+    display: flex;
+    gap: 1em;
+
+  }
+  
+  .profile-container {
+    position: relative;
+  }
+  
+  .profile-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .profile-dropdown {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    background-color: #119DA4;
+    color: #D7D9CE;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem 0;
+    display: none;
+  }
+  
+  .profile-dropdown.show {
+    display: block;
+  }
+  
+  .profile-dropdown a {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .profile-dropdown a:hover {
+    background-color: #f2f2f2;
+  }
+
+
+  svg .notifications {
+    background: none;
+    border: none;
+    padding: 15px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+  svg.notifications:hover {
+    background: rgba(170, 170, 170, 0.062);
+    transition: 0.5s;
+  }
+  
